@@ -1,49 +1,1035 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Documento sin título</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Sobui : A short css framework" />
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<body>
 
-    <title>Sobui</title>
-  </head>
+<div id="wrapp">
 
-  <body>
+<h1>TIPOGRAFÍA</h1>
+<p>Arial Regular es la tipografía por defecto</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/SocialBro/sobui">View on GitHub</a>
+<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+1234567890!@£$%^&*()_+</p>
 
-          <h1 id="project_title">Sobui</h1>
-          <h2 id="project_tagline">A short css framework</h2>
+<p><strong>Arial Bold</strong> es la tipografía para resaltar texto</p>
+<p>Éste texto tiene "strong" que es algo más grande</p>
+<p><strong>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+1234567890!@£$%^&*()_+</strong></p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/SocialBro/sobui/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/SocialBro/sobui/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<p>Este texto tiene "b" que es algo más pequeño</p>
+<p><b>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+1234567890!@£$%^&*()_+</b></p>
+
+<p><i>Georgia</i> es la tipografía para dar énfasis a frases</p>
+<p>Éste texto tiene "i" que es itálica normal</p>
+<p><i>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+1234567890!@£$%^&*()_+</i></p>
+
+<p><em>Georgia</em> es la tipografía para dar énfasis a frases</p>
+<p>Éste texto tiene "em" que es itálica con énfasis</p>
+<p><em>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+1234567890!@£$%^&*()_+</em></p>
+
+<p>Cabin Condensed es tipografía para títulos</p>
+
+<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+abcdefghijklmnopqrstuvwxyz<br/>
+1234567890!@£$%^&*()_+</p>
+<div style="clear:both"></div>
+
+<h1>Encabezados</h1>
+
+<h1>Encabezado H1</h1>
+<h2>Encabezado H2</h2>
+<h3>Encabezado H3</h3>
+<h4>Encabezado H4</h4>
+<h5>Encabezado H5</h5>
+<h6>Encabezado H6</h6>
+<div style="clear:both"></div>
+
+<h1>Párrafos</h1>
+<p>Lorem ipsum<sup>1</sup> dolor sit amet<sub>cita</sub>, consectetur <b>éste texto usa "b" adipiscing elit. Etiam sit amet</b> tortor ut dolor scelerisque rhoncus. In interdum tincidunt libero, pretium tempus leo lacinia eu. Aenean at hendrerit risus. <strong>Pero éste usa "strong"ed rutrum arcu at erat semper</strong> vitae adipiscing mauris fringilla. Nunc pharetra condimentum pellentesque. </p>
+<p class="tipo-uppercase">Este párrafo tiene "uppercase" Morbi sed urna velit. Suspendisse aliquam, dolor quis varius varius, arcu leo suscipit nunc, eu tempor elit nibh nec nulla. </p>
+<p>Mauris non tellus tempor <i>este texto está en "i"  itálica</i> pharetra sed lacinia mauris.<em> Y este está con"em" que se representa en negrita Maecenas eleifend, elit ut dignissim mollis, arcu erat venenatis metus,</em> sed interdum justo erat feugiat odio.</p>
+<div style="clear:both"></div>
+
+<h1>Listas</h1>
+<p>Listas ordendas</p>
+<ol>
+  <li>Ordenada</li>
+</ol>
+
+<p>Listas desordenadas</p>
+<ul>
+  <li>Lista desordenada</li>
+</ul>
+<div style="clear:both"></div>
+
+
+<h1>INPUTS</h1>
+<input type="text" placeholder="Your email" />
+<input class="input-error" type="text" placeholder="wrong" />
+<input class="input-succeed" type="text" placeholder="good" />
+<input type="password" placeholder="Your password"/>
+<input type="button" value="Botón"/>
+<input type="submit" value="Enviar"/>
+<button>Button button</button>
+<input type="checkbox"/>
+<input type="radio"/>
+<!--special checkbox-->
+  <label id="sliderLabel">
+                    <input type="checkbox"/>
+                    <span id="slider">
+                        <span id="sliderOn">ON</span>
+                        <span id="sliderOff">OFF</span>
+                        <span id="sliderBlock"></span>
+                    </span>
+                </label>
+
+<textarea placeholder="Your message"></textarea>
+<div class="input-select">
+	  <select>
+	    <option selected>Dropdown</option>
+	    <option>Something</option>
+	    <option>Anything</option>
+         <option>And...a very long option</option>
+      </select>
+</div>
+<div style="clear:both"></div>
+
+<h1>MESSAGES</h1>
+
+<div class="message-news">
+	<p>This message is for news</p>
+    <button class="message-close">x</button>
+</div>
+
+<div class="message-warning">
+	<p>This message is for warnings</p>
+    <button class="message-close">x</button>
+
+</div>
+
+<div class="message-error">
+	<p>This message is for errors</p>
+    <button class="message-close">x</button>
+
+</div>
+
+<div class="message-succeed">
+	<p>This message is for succeeds</p>
+    <button class="message-close">x</button>
+
+</div>
+<div style="clear:both"></div>
+
+<h1>TOOLTIPS</h1>
+<div class="docstyle">
+
+<div class="tooltip-up">
+	This shows a tooltip with an arrow pointing up
+</div>
+
+<div class="tooltip-right">
+	This shows a tooltip with an arrow pointing up
+</div>
+
+<div class="tooltip-bottom">
+	This shows a tooltip with an arrow pointing up
+</div>
+
+<div class="tooltip-left">
+	This shows a tooltip with an arrow pointing up
+</div>
+
+</div>
+
+<div style="clear:both"></div>
+
+<h1>LINKS</h1>
+
+<a href="#">This is a common link</a>
+<a class="a-error" href="#">This link is for error</a>
+<a class="a-succeed" href="#">This link is for succeed</a>
+<a class="a-button" href="#">Looks like a button</a>
+<div style="clear:both"></div>
+
+<h1>TANKS</h1>
+
+<div class="tank-big">
+    <div class="tank">
+        <div class="tank-title">
+         <h2>This is a container</h2>
+            <div class="tank-buttons">
+                <div class="icon ico-help"></div>
+                <div class="icon ico-close"></div>
+            </div>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit viverra fermentum. Etiam varius felis sit amet quam ultrices interdum. Aliquam scelerisque quam vitae augue gravida suscipit eget vel eros. Nunc ac nibh et metus imperdiet facilisis. Phasellus non orci a risus interdum lacinia. Fusce rhoncus faucibus nulla vehicula feugiat. Proin eget ante eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent sed odio tristique diam feugiat egestas ullamcorper fermentum dolor. 
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-medium">
+    <div class="tank">
+        <div class="tank-title">
+         <h2>This is a container</h2>
+            <div class="tank-buttons">
+                <div class="icon ico-help"></div>
+                <div class="icon ico-close"></div>
+            </div>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-medium">
+    <div class="tank">
+        <div class="tank-title">
+         <h2>This is a container</h2>
+            <div class="tank-buttons">
+                <div class="icon ico-help"></div>
+                <div class="icon ico-close"></div>
+            </div>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small">
+    <div class="tank">
+        <div class="tank-title">
+         <h2>This is a container</h2>
+            <div class="tank-buttons">
+                <div class="icon ico-help"></div>
+                <div class="icon ico-close"></div>
+            </div>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small">
+    <div class="tank">
+        <div class="tank-title">
+         <h2>This is a container</h2>
+            <div class="tank-buttons">
+                <div class="icon ico-help"></div>
+                <div class="icon ico-close"></div>
+            </div>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small">
+    <div class="tank">
+        <div class="tank-title">
+         <h2>This is a container</h2>
+            <div class="tank-buttons">
+                <div class="icon ico-help"></div>
+                <div class="icon ico-close"></div>
+            </div>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small">
+    <div class="tank">
+        <div class="tank-title">
+         <h2>This is a container</h2>
+            <div class="tank-buttons">
+                <div class="icon ico-help"></div>
+                <div class="icon ico-close"></div>
+            </div>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+<div style="clear:both"></div>
+
+<h1>TANKS SIMPLE</h1>
+<div class="tank-big">
+    <div class="tank">
+       <div class="tank-o-content tank-o-content-noborder">
+            <div class="tank-i-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit viverra fermentum. Etiam varius felis sit amet quam ultrices interdum. Aliquam scelerisque quam vitae augue gravida suscipit eget vel eros. Nunc ac nibh et metus imperdiet facilisis. Phasellus non orci a risus interdum lacinia. Fusce rhoncus faucibus nulla vehicula feugiat. Proin eget ante eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent sed odio tristique diam feugiat egestas ullamcorper fermentum dolor. 
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-medium">
+    <div class="tank">
+       <div class="tank-o-content tank-o-content-noborder">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-medium">
+    <div class="tank">
+       <div class="tank-o-content tank-o-content-noborder">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small">
+    <div class="tank">
+       <div class="tank-o-content tank-o-content-noborder">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small">
+    <div class="tank">
+       <div class="tank-o-content tank-o-content-noborder">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small">
+    <div class="tank">
+       <div class="tank-o-content tank-o-content-noborder">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small">
+    <div class="tank">
+       <div class="tank-o-content tank-o-content-noborder">
+            <div class="tank-i-content">
+                This is the content
+            </div>
+        </div>
+     </div>
+</div>
+<div style="clear:both"></div>
+
+
+<h1>TANKS ADVANCED</h1>
+
+<div class="tank-big-adv">
+    <div class="tank">
+        <div class="tank-title-adv">
+         <h2>This is a container</h2>
+         <p>Here you can use any text you want, this tank is for special purposses</p>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                <div class="tank-graph-adv"></div>
+            </div>
+        </div>
+        <div class="tank-footer-adv">
+        	<ul class="tank-footer-adv-info">
+            	<li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-medium-adv">
+    <div class="tank">
+        <div class="tank-title-adv">
+         <h2>This is a container</h2>
+         <p>Here you can use any text you want, this tank is for special purposses</p>
+
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                <div class="tank-graph-adv"></div>
+            </div>
+        </div>
+          <div class="tank-footer-adv">
+        	<ul class="tank-footer-adv-info">
+            	<li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-medium-adv">
+    <div class="tank">
+        <div class="tank-title-adv">
+         <h2>This is a container</h2>
+          <p>Here you can use any text you want, this tank is for special purposses</p>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                <div class="tank-graph-adv"></div>
+            </div>
+        </div>
+          <div class="tank-footer-adv">
+        	<ul class="tank-footer-adv-info">
+            	<li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small-adv">
+    <div class="tank">
+        <div class="tank-title-adv">
+         <h2>This is a container</h2>
+         <p>Here you can use any text you want, this tank is for special purposses</p>
+   </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                <div class="tank-graph-adv"></div>
+            </div>
+        </div>
+          <div class="tank-footer-adv">
+        	<ul class="tank-footer-adv-info">
+            	<li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small-adv">
+    <div class="tank">
+        <div class="tank-title-adv">
+         <h2>This is a container</h2>
+            <p>Here you can use any text you want, this tank is for special purposses</p>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                <div class="tank-graph-adv"></div>
+            </div>
+        </div>
+          <div class="tank-footer-adv">
+        	<ul class="tank-footer-adv-info">
+            	<li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small-adv">
+    <div class="tank">
+        <div class="tank-title-adv">
+         <h2>This is a container</h2>
+         <p>Here you can use any text you want, this tank is for special purposses</p>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                <div class="tank-graph-adv"></div>
+            </div>
+        </div>
+          <div class="tank-footer-adv">
+        	<ul class="tank-footer-adv-info">
+            	<li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+     </div>
+</div>
+
+<div class="tank-small-adv">
+    <div class="tank">
+        <div class="tank-title-adv">
+         <h2>This is a container</h2>
+         <p>Here you can use any text you want, this tank is for special purposses</p>
+       </div>
+       <div class="tank-o-content">
+            <div class="tank-i-content">
+                <div class="tank-graph-adv"></div>
+            </div>
+        </div>
+          <div class="tank-footer-adv">
+        	<ul class="tank-footer-adv-info">
+            	<li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+                <li>Special information</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+     </div>
+</div>
+<div style="clear:both"></div>
+
+<h1>TAGS</h1>
+
+<ul class="tags">
+	<li><a href="#">tag</a></li>
+	<li><a href="#">tag name</a></li>
+    <li><a href="#">tag name with very long content</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag</a></li>
+	<li><a href="#">tag name</a></li>
+    <li><a href="#">tag name with very long content</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+</ul>
+<div style="clear:both"></div>
+
+<ul class="tags-blue">
+	<li><a href="#">tag</a></li>
+	<li><a href="#">tag name</a></li>
+    <li><a href="#">tag name with very long content</a></li>
+    <li><a class="tags-blue" href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag</a></li>
+	<li><a href="#">tag name</a></li>
+    <li><a href="#">tag name with very long content</a></li>
+    <li><a class="tags-blue" href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+    <li><a href="#">tag name</a></li>
+</ul>
+<div style="clear:both"></div>
+
+<h1>BUTTONS</h1>
+
+<a class="button button-small" href="#">Button small</a>
+<a class="button" href="#">Button normal</a>
+<a class="button button-medium" href="#">Button medium</a>
+<a class="button button-large" href="#">Button large</a>
+<div style="clear:both"><br/></div>
+
+<a class="button button-small" href="#">Button small<span class="button-arrrx16"></span></a>
+<a class="button" href="#">Button normal<span class="button-arrrx16"></span></a>
+<a class="button button-medium" href="#">Button medium<span class="button-arrrx48"></span></a>
+<a class="button button-large" href="#">Button large<span class="button-arrrx48"></span></a>
+<div style="clear:both"><br/></div>
+
+<a class="button button-w button-w-small" href="#">Button small</a>
+<a class="button button-w" href="#">Button normal</a>
+<a class="button button-w button-w-medium" href="#">Button medium</a>
+<a class="button button-w button-w-large" href="#">Button large</a>
+<div style="clear:both"><br/></div>
+
+<h1>PAGINATION</h1>
+
+<div class="pag-container">
+	<div class="pag icon ico-rw-a-32x pag-rw"></div><div class="pag">1</div><div class="pag">2</div><div class="pag">3</div><div class="pag">4</div><div class="pag">5</div><div class="pag">6</div><div class="pag pag-active">7</div><div class="pag pag-visited">8</div><div class="pag pag-visited">9</div><div class="pag pag-visited">10</div><div class="pag pag-visited">11</div><div class="pag icon ico-ff-a-32x pag-ff"></div>
+</div>
+
+<div style="clear:both"><br/></div>
+
+
+<h1>TABLE</h1>
+<div class="master-table">
+<table border="0" cellspacing="0" cellpadding="0">
+   <tr class="master-table-headers">
+  	<th scope="col" class="firstcpth">Features</th>
+    <th scope="col">Premium Plus</th>
+    <th scope="col">Professional</th>
+    <th scope="col">Business</th>
+    <th scope="col" class="lastcph lastcpth">Custom</th>
+  </tr>
+  <tr class="master-table-rwhite">
+    <th scope="row" class="master-table-coldetail">Contacts</th>
+    <td>20000</td>
+    <td>50000</td>
+    <td>200000</td>
+    <td class="lastcptd">Custom</td>
+  </tr>
+  <tr class="master-table-rwhitesmoke">
+    <th scope="row" class="master-table-coldetail">Accounts</th>
+    <td>2</td>
+    <td>10</td>
+    <td>30</td>
+    <td class="lastcptd">Custom</td>
+  </tr>
+  <tr class="master-table-rwhite">
+    <th scope="row" class="master-table-coldetail">Best time to tweet</th>
+    <td>500</td>
+    <td>1000</td>
+    <td>5000</td>
+    <td class="lastcptd">Custom</td>
+  </tr>
+  <tr class="master-table-rwhitesmoke">
+    <th scope="row" class="master-table-coldetail">Collaborators</th>
+    <td>Me</td>
+    <td>Me and X collaborators</td>
+    <td>Me and X collaborators</td>
+    <td class="lastcptd">Custom</td>
+  </tr>
+  <tr class="master-table-rwhite">
+    <th scope="row" class="master-table-coldetail">Price</th>
+    <td>$ 13.45 monthly</td>
+    <td>$ 39 monthly</td>
+    <td>$ 149 monthly</td>
+    <td class="lastcptd">Custom</td>
+  </tr>
+  <tr class="master-table-rwhitesmoke">
+    <th scope="row" class="lastcptdbbttm master-table-coldetail lastcpbrl">&nbsp;</th>
+    <td class="lastcptdbbttm master-table-succeed">Your current plan</td>
+    <td class="lastcptdbbttm master-table-warning">Your account it's too big for this plan</td>
+    <td class="lastcptdbbttm"><a class="button button-w-normal" href="#">Select this plan</a></td>
+    <td class="lastcptd lastcptdbbttm lastcpbrr"><a class="button button-w  button-w-normal" href="#">Select this plan</a></td>
+  </tr>
+</table>
+</div>
+<div style="clear:both"><br/></div>
+
+<h1>TABS</h1>
+<div class="tabGroup">
+    <input type="radio" name="tabGroup1" id="rad1" class="tab1" checked="checked"/>
+    <label for="rad1">Tab 1</label>
+ 
+    <input type="radio" name="tabGroup1" id="rad2" class="tab2"/>
+    <label for="rad2">Tab 2</label>
+     
+    <input type="radio" name="tabGroup1" id="rad3" class="tab3"/>
+    <label for="rad3">Tab 3</label>
+     
+    <br/>
+ 
+    <div class="tab1">
+    	
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>SocialBro's sobui, a simple, responsive css framewrok.</h3>
-      </section>
+    <div class="tab2">
+    	<div class="tank-medium">
+                <div class="tank">
+                    <div class="tank-title">
+                     <h2>This is a container</h2>
+                        <div class="tank-buttons">
+                            <div class="icon ico-help"></div>
+                            <div class="icon ico-close"></div>
+                        </div>
+                   </div>
+                   <div class="tank-o-content">
+                        <div class="tank-i-content">
+                            <div class="master-table">
+            <table border="0" cellspacing="0" cellpadding="0">
+               <tr class="master-table-headers">
+                <th scope="col" class="firstcpth">Features</th>
+                <th scope="col">Premium Plus</th>
+                <th scope="col">Professional</th>
+                <th scope="col">Business</th>
+                <th scope="col" class="lastcph lastcpth">Custom</th>
+              </tr>
+              <tr class="master-table-rwhite">
+                <th scope="row" class="master-table-coldetail">Contacts</th>
+                <td>20000</td>
+                <td>50000</td>
+                <td>200000</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhitesmoke">
+                <th scope="row" class="master-table-coldetail">Accounts</th>
+                <td>2</td>
+                <td>10</td>
+                <td>30</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhite">
+                <th scope="row" class="master-table-coldetail">Best time to tweet</th>
+                <td>500</td>
+                <td>1000</td>
+                <td>5000</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhitesmoke">
+                <th scope="row" class="master-table-coldetail">Collaborators</th>
+                <td>Me</td>
+                <td>Me and X collaborators</td>
+                <td>Me and X collaborators</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhite">
+                <th scope="row" class="master-table-coldetail">Price</th>
+                <td>$ 13.45 monthly</td>
+                <td>$ 39 monthly</td>
+                <td>$ 149 monthly</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhitesmoke">
+                <th scope="row" class="lastcptdbbttm master-table-coldetail lastcpbrl">&nbsp;</th>
+                <td class="lastcptdbbttm master-table-succeed">Your current plan</td>
+                <td class="lastcptdbbttm master-table-warning">Your account it's too big for this plan</td>
+                <td class="lastcptdbbttm"><a class="button button-w-normal" href="#">Select this plan</a></td>
+                <td class="lastcptd lastcptdbbttm lastcpbrr"><a class="button button-w  button-w-normal" href="#">Select this plan</a></td>
+              </tr>
+            </table>
+            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="tank-medium">
+                <div class="tank">
+                    <div class="tank-title">
+                     <h2>This is a container</h2>
+                        <div class="tank-buttons">
+                            <div class="icon ico-help"></div>
+                            <div class="icon ico-close"></div>
+                        </div>
+                   </div>
+                   <div class="tank-o-content">
+                        <div class="tank-i-content">
+                            <div class="master-table">
+            <table border="0" cellspacing="0" cellpadding="0">
+               <tr class="master-table-headers">
+                <th scope="col" class="firstcpth">Features</th>
+                <th scope="col">Premium Plus</th>
+                <th scope="col">Professional</th>
+                <th scope="col">Business</th>
+                <th scope="col" class="lastcph lastcpth">Custom</th>
+              </tr>
+              <tr class="master-table-rwhite">
+                <th scope="row" class="master-table-coldetail">Contacts</th>
+                <td>20000</td>
+                <td>50000</td>
+                <td>200000</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhitesmoke">
+                <th scope="row" class="master-table-coldetail">Accounts</th>
+                <td>2</td>
+                <td>10</td>
+                <td>30</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhite">
+                <th scope="row" class="master-table-coldetail">Best time to tweet</th>
+                <td>500</td>
+                <td>1000</td>
+                <td>5000</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhitesmoke">
+                <th scope="row" class="master-table-coldetail">Collaborators</th>
+                <td>Me</td>
+                <td>Me and X collaborators</td>
+                <td>Me and X collaborators</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhite">
+                <th scope="row" class="master-table-coldetail">Price</th>
+                <td>$ 13.45 monthly</td>
+                <td>$ 39 monthly</td>
+                <td>$ 149 monthly</td>
+                <td class="lastcptd">Custom</td>
+              </tr>
+              <tr class="master-table-rwhitesmoke">
+                <th scope="row" class="lastcptdbbttm master-table-coldetail lastcpbrl">&nbsp;</th>
+                <td class="lastcptdbbttm master-table-succeed">Your current plan</td>
+                <td class="lastcptdbbttm master-table-warning">Your account it's too big for this plan</td>
+                <td class="lastcptdbbttm"><a class="button button-w-medium" href="#">Select this plan</a></td>
+                <td class="lastcptd lastcptdbbttm lastcpbrr"><a class="button button-w  button-w-medium" href="#">Select this plan</a></td>
+              </tr>
+            </table>
+            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
     </div>
+    <div class="tab3">
+    	<p>Cabin Condensed es tipografía para títulos</p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Sobui maintained by <a href="https://github.com/SocialBro">SocialBro</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+        <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+        abcdefghijklmnopqrstuvwxyz<br/>
+        1234567890!@£$%^&*()_+</p>
     </div>
+</div>
 
+
+<div style="clear:both"><br/></div>
+
+<h1>DASHBUTTONS</h1>
+
+	<ul class="dashbutton-container">
+    	<li class="dashbutton-li">
+           <div class="dashbutton">
+              <p class="dashbuton-p">Small<br/>Button</p>	
+           </div>
+         </li>
+         <li class="dashbutton-li">
+           <div class="dashbutton">
+              <p class="dashbuton-p">One line</p>	
+           </div>
+         </li>
+         <li class="dashbutton-li">
+           <div class="dashbutton">
+              <p class="dashbuton-p">Is better</p>	
+           </div>
+         </li>
+	</ul>
     
+    <ul class="dashbutton-container">
+    	<li class="dashbutton-li dashbutton-medium">
+           <div class="dashbutton">
+              <p class="dashbuton-p">Medium<br/>Button</p>	
+           </div>
+         </li>
+         <li class="dashbutton-li dashbutton-medium">
+           <div class="dashbutton">
+              <p class="dashbuton-p">You can use<br/>two lines</p>	
+           </div>
+         </li>
+         <li class="dashbutton-li dashbutton-medium">
+           <div class="dashbutton">
+              <p class="dashbuton-p">Two lines<br/>is better</p>	
+           </div>
+         </li>
+	</ul>
+    
+    <ul class="dashbutton-container">
+    	<li class="dashbutton-li dashbutton-large">
+           <div class="dashbutton ">
+              <p class="dashbuton-p">Big<br/>Button</p>	
+           </div>
+         </li>
+         <li class="dashbutton-li dashbutton-large">
+           <div class="dashbutton ">
+              <p class="dashbuton-p">You can use<br/>three lines</p>	
+           </div>
+         </li>
+         <li class="dashbutton-li dashbutton-large">
+           <div class="dashbutton ">
+              <p class="dashbuton-p">Three lines<br/>is much better<br/>here</p>	
+           </div>
+         </li>
+	</ul>
+    
+    	<ul class="dashbutton-container">
+    	<li class="dashbutton-li">
+           <div class="dashbutton ">
+                <img class="dashbutton-img" src=""/>
+           </div>
+         </li>
+         <li class="dashbutton-li">
+           <div class="dashbutton ">
+                <img class="dashbutton-img" src=""/>
+           </div>
+         </li>
+         <li class="dashbutton-li">
+           <div class="dashbutton ">
+                <img class="dashbutton-img" src=""/>
+           </div>
+         </li>
+	</ul>
 
-  </body>
+
+<div style="clear:both"><br/></div>
+
+
+
+<h1>BUBBLES</h1>
+
+<div class="bubble bubble-top">
+	<div class="bubble-content">Nice bubble!</div>
+</div>
+<div style="clear:both"><br/></div>
+<div class="bubble bubble-right">
+	<div class="bubble-content">Nice bubble!</div>
+</div>
+<div style="clear:both"><br/></div>
+<div class="bubble bubble-bottom">
+	<div class="bubble-content">Nice bubble!</div>
+</div>
+<div style="clear:both"><br/></div>
+<div class="bubble bubble-left">
+	<div class="bubble-content">Nice bubble!</div>
+</div>
+
+
+<div style="clear:both"><br/></div>
+
+
+<h1>ICONS</h1>
+
+ <span class="iconLibrary ico-01-refresh"></span> 
+ <span class="iconLibrary ico-02-redo"></span> 
+ <span class="iconLibrary ico-06-magnify"></span> 
+ <span class="iconLibrary ico-07-map-marker"></span> 
+ <span class="iconLibrary ico-09-chat"></span> 
+ <span class="iconLibrary ico-11-clock"></span> 
+ <span class="iconLibrary ico-111-user"></span> 
+ <span class="iconLibrary ico-112-group"></span> 
+ <span class="iconLibrary ico-117-todo"></span> 
+ <span class="iconLibrary ico-113-navigation"></span> 
+ <span class="iconLibrary ico-12-eye"></span> 
+ <span class="iconLibrary ico-122-stats"></span> 
+ <span class="iconLibrary ico-59-flag"></span> 
+ <span class="iconLibrary ico-14-tag"></span> 
+ <span class="iconLibrary ico-157-wrench"></span> 
+ <span class="iconLibrary ico-17-bar-chart"></span> 
+ <span class="iconLibrary ico-180-stickynote"></span> 
+ <span class="iconLibrary ico-187-pencil"></span> 
+ <span class="iconLibrary ico-19-gear"></span> 
+ <span class="iconLibrary ico-19-gear"></span> 
+ <span class="iconLibrary ico-56-cloud"></span> 
+ <span class="iconLibrary ico-57-download"></span> 
+ <span class="iconLibrary ico-65-note"></span> 
+ <span class="iconLibrary ico-90-life-buoy"></span> 
+ <span class="iconLibrary ico-95-equalizer"></span> 
+<p>and 185 more</p>
+
+ <div class="button button-w ico-button"><span class="iconLibrary ico-01-refresh"></span></div>
+ <div class="button button-w ico-button"><span class="iconLibrary ico-02-redo"></span></div>
+ <div class="button button-w ico-button"><span class="iconLibrary ico-06-magnify"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-07-map-marker"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-09-chat-2"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-11-clock"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-111-user"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-112-group"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-117-todo"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-113-navigation"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-12-eye"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-122-stats"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-59-flag"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-14-tag"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-157-wrench"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-17-bar-chart"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-180-stickynote"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-187-pencil"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-19-gear"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-56-cloud"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-57-download"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-65-note"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-90-life-buoy"></span></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-95-equalizer"></span></div> 
+<p>and 185 more</p>
+
+<div class="button button-w ico-button"><span class="iconLibrary ico-01-refresh"></span><b>Refresh</b></div>
+ <div class="button button-w ico-button"><span class="iconLibrary ico-02-redo"></span><b>Syncronize</b></div>
+ <div class="button button-w ico-button"><span class="iconLibrary ico-06-magnify"></span><b>Search</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-07-map-marker"></span><b>Getolocation</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-09-chat-2"></span><b>Mentions</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-11-clock"></span><b>Time since last tweet</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-111-user"></span><b>You are collaborator</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-112-group"></span><b>Your group</b></div>
+ <div class="button button-w ico-button"><span class="iconLibrary ico-117-todo"></span><b>Your quick list</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-113-navigation"></span><b>User guide</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-12-eye"></span><b>Current view</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-122-stats"></span><b>Custom insights</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-59-flag"></span><b>Flag this as...</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-14-tag"></span><b>Tag this users</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-157-wrench"></span><b>Tools</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-17-bar-chart"></span><b>Stats for your last tweets</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-180-stickynote"></span><b>Add a note</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-187-pencil"></span><b>Write a tweet</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-19-gear"></span><b>Settings</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-56-cloud"></span><b>Upload your sources</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-57-download"></span><b>Save your list</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-65-note"></span><b>Add a note</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-90-life-buoy"></span><b>Help & Support</b></div> 
+ <div class="button button-w ico-button"><span class="iconLibrary ico-95-equalizer"></span><b>Filter</b></div> 
+<p>and 185 more</p>
+
+
+</div>
+
+</body>
 </html>
